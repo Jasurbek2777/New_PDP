@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.CourseInfoFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#0A252F">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/toolbar_back_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.01"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/course_info_toolbar_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:text="Android development"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/desc_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="20dp"
+        android:text="Android kursida siz dastlab kotlin dasturlash tili o’rganasiz.
+
+Shundan so’ng, sodda va murakkab ko’rinishidagi UI komponentlari yordamida mobil ilovalarning tashqi dizayn ko’rinishi qannday yaratish o’rgatiladi.
+
+SQlite malumotlar bazasi hamda ROOM va realm kabi mashhur kutubxonalar, API tushunchasi va internet orqali ishlovchi dasturlar strukturasi, Firebase texnologiyasi, shuningdek hozirda judayam ko’p foydalanilayotgan arxitektura komponentalari, dagger kutubxonalari orqali murakkab mobil ilovalar yaratish imkoniyatiga ega bo’lasiz.
+"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintHeight_percent="0.8"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/add_pupil_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#0A252F"
+        app:cardCornerRadius="5dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintHorizontal_bias="0.89"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95"
+        app:layout_constraintWidth_percent="0.35">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Talaba qo'shish"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

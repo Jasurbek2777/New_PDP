@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AddGroupFragment">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#0A252F">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/add_mentor_toolbar_back_btn"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.01"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:text="Yangi guruh qo'shish"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.25"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/group_name"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/round"
+        android:hint="Guruh nomi"
+        android:paddingLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.075"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.14"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <EditText
+        android:id="@+id/group_time"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/round"
+        android:hint="Vaqti"
+        android:paddingLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.075"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.36"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <EditText
+        android:id="@+id/guruh_mentor"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/round"
+        android:hint="Mentor"
+        android:paddingLeft="20dp"
+        android:paddingRight="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.075"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="129dp"
+        android:layout_height="37dp"
+        app:cardBackgroundColor="#0A252F"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98">
+
+        <TextView
+            android:id="@+id/add_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Saqlash"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

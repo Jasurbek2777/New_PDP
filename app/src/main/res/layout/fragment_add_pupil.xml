@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AddPupilFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#0A252F">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/toolbar_back_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.01"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:text="Talaba qo'shish"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.25"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/name_et"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/round"
+        android:hint="Ism"
+        android:paddingLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.075"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintVertical_bias="0.03"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <EditText
+        android:id="@+id/second_name_et"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/round"
+        android:hint="Familyasi"
+        android:paddingLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.075"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintVertical_bias="0.14"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <EditText
+        android:id="@+id/middle_name_et"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/round"
+        android:hint="Otasining ismi"
+        android:paddingLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.075"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintVertical_bias="0.25"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <EditText
+        android:id="@+id/date_et"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/round"
+        android:drawableRight="@drawable/ic_calendar"
+        android:hint="12/04/2021"
+        android:paddingLeft="20dp"
+        android:paddingRight="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.075"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintVertical_bias="0.36"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <Spinner
+        android:id="@+id/guruh_spinner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autofillHints="Mentorni tanlang"
+        android:background="@drawable/round"
+        android:paddingLeft="20dp"
+        android:spinnerMode="dialog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.075"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintVertical_bias="0.47"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <TextView
+        android:id="@+id/course_day1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autofillHints="Mentorni tanlang"
+        android:background="@drawable/round"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="Kunlari"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.075"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintVertical_bias="0.58"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <TextView
+        android:id="@+id/curs_time"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/round"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="Vaqti"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.075"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintVertical_bias="0.69"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <TextView
+        android:id="@+id/curs_mentor"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autofillHints="Mentorni tanlang"
+        android:background="@drawable/round"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="Mentor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.075"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintVertical_bias="0.808"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="129dp"
+        android:layout_height="37dp"
+        app:cardBackgroundColor="#0A252F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@id/curs_mentor"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98">
+
+        <TextView
+            android:id="@+id/save_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Saqlash"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
